@@ -44,6 +44,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="twitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uti-pW-uDV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wb8-a2-38l">
                                 <rect key="frame" x="100" y="300.33333333333331" width="193" height="60"/>
@@ -65,6 +68,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvI-ck-rp5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3p-Z3-sgC">
                                 <rect key="frame" x="100" y="400.33333333333331" width="193" height="60"/>
@@ -82,6 +88,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="youtube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="84Q-97-4TW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ5-LH-sDf">
                                 <rect key="frame" x="100" y="500.33333333333326" width="193" height="60"/>
@@ -91,7 +100,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Button">
+                                        <fragment content="Instagram">
                                             <attributes>
                                                 <font key="NSFont" size="20" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -99,6 +108,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="instagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2k-VN-M0q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -121,6 +133,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rW6-yl-ZEo" secondAttribute="trailing" constant="100" id="tWK-WY-meg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnFacebook" destination="wb8-a2-38l" id="txL-Qd-vRd"/>
+                        <outlet property="btnInstagram" destination="vJ5-LH-sDf" id="clR-fU-l1g"/>
+                        <outlet property="btnTwitter" destination="rW6-yl-ZEo" id="bMK-kM-p0M"/>
+                        <outlet property="btnYoutube" destination="W3p-Z3-sgC" id="A0Y-Vy-f32"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
